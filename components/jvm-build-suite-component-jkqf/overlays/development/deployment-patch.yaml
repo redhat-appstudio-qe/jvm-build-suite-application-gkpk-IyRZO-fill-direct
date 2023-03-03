@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-jkqf
+  namespace: jvm-build-qlav-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:25199ae3d5f5ae8de6d649f77d6783cb964ec0c540ad88f412789446d159c27c
+        name: container-image
+        resources: {}
+status: {}
